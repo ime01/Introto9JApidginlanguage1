@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Intro to 9JA pidgin language</string>
+
+    <string name="Sample_GreetingAndHousehold_Phrases">Sample Greetings and Household Phrases</string>
+
+    <string name="Sample_Outdoor_Phrases">Sample Outdoor Phrases</string>
+
+    <string name="Sample_TravelAndLeisure_Phrases">Sample Travel and Leisure Phrases</string>
+
+    <string name="Sample_Work_Phrases">Sample Work Phrases</string>
+
+</resources>

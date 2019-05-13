@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/HouseHold_Phrases"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@color/colourGreen"
+        android:gravity="center_vertical"
+        android:onClick="OpenGreetingsActivity"
+        android:paddingLeft="16dp"
+        android:text="@string/Sample_GreetingAndHousehold_Phrases"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Travelnleisure_Phrases"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@color/colourBrown"
+        android:gravity="center_vertical"
+        android:onClick="OpenTravelActivity"
+        android:paddingLeft="16dp"
+        android:text="@string/Sample_TravelAndLeisure_Phrases"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/Outdoor_Phrases"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@color/colourBlue"
+        android:gravity="center_vertical"
+        android:onClick="OpenOutdoorActivity"
+        android:paddingLeft="16dp"
+        android:text="@string/Sample_Outdoor_Phrases"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/Work_Phrases"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@color/colourlightpink"
+        android:gravity="center_vertical"
+        android:onClick="OpenWorkActivity"
+        android:paddingLeft="16dp"
+        android:text="@string/Sample_Work_Phrases"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+
+</LinearLayout>
