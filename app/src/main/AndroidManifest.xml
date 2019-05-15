@@ -17,13 +17,21 @@
             </intent-filter>
         </activity>
         <activity android:name=".GreetingNhouseholdActivity"
-            android:label="@string/Sample_GreetingAndHousehold_Phrases"/>
+            android:label="@string/Sample_GreetingAndHousehold_Phrases"
+            android:parentActivityName=".MainActivity"/>
+
         <activity android:name=".OutdoorActivity"
-            android:label="@string/Sample_Outdoor_Phrases"/>
+            android:label="@string/Sample_Outdoor_Phrases"
+            android:parentActivityName=".MainActivity"/>
+
         <activity android:name=".TravelNleisureActivity"
-            android:label="@string/Sample_TravelAndLeisure_Phrases" />
+            android:label="@string/Sample_TravelAndLeisure_Phrases"
+            android:parentActivityName=".MainActivity"/>
+
         <activity android:name=".WorkActivity"
-            android:label="@string/Sample_Work_Phrases">
+            android:label="@string/Sample_Work_Phrases"
+            android:parentActivityName=".MainActivity">
+
         </activity>
     </application>
 
