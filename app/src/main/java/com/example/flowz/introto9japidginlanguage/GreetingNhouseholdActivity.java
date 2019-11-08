@@ -31,12 +31,12 @@ public class GreetingNhouseholdActivity extends AppCompatActivity {
         wordsSaid.add(new constructor("Good morning", "Morning my guy",R.raw.morning));
         wordsSaid.add(new constructor("How are you", "How you dey",R.raw.howyoudey));
         wordsSaid.add(new constructor("I am fine", "I dey o",R.raw.ideyo));
-        wordsSaid.add(new constructor("Who are you", "Who you be",R.raw.whoube));
+        wordsSaid.add(new constructor("Who are you", "Who you be",R.raw.whoyoube));
         wordsSaid.add(new constructor("What is your name", "Wetin be your name",R.raw.wetinbeyourname));
-        wordsSaid.add(new constructor("My name is Jon Snow", "My name na Jon snow",R.raw.mynamenajonsnow));
-        wordsSaid.add(new constructor("where are you going", "Where you day go",R.raw.whereudeygo));
-        wordsSaid.add(new constructor("What is going on with you", "Wetin dey sup with you",R.raw.wetindeysup));
-        wordsSaid.add(new constructor("Is the food ready", "Food don set",R.raw.fooddonset));
+        wordsSaid.add(new constructor("My name is Jon Snow", "My name na Jon snow",R.raw.johnsnow));
+        wordsSaid.add(new constructor("where are you going", "Where you day go",R.raw.whereyoudeygo));
+//        wordsSaid.add(new constructor("What is going on with you", "Wetin dey sup with you",R.raw.wetindeysup));
+        wordsSaid.add(new constructor("Is the food ready", "Food don set",R.raw.food));
 
 
         CustomAdapter showsList = new CustomAdapter(this, wordsSaid,R.color.colourGreen);
@@ -59,8 +59,5 @@ public class GreetingNhouseholdActivity extends AppCompatActivity {
 
             }
         });
-
-
-
     }
 }

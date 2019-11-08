@@ -3,58 +3,163 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/HouseHold_Phrases"
+    <android.support.v7.widget.GridLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/list_item_height"
-        android:background="@color/colourGreen"
-        android:gravity="center_vertical"
-        android:onClick="OpenGreetingsActivity"
-        android:paddingLeft="16dp"
-        android:text="@string/Sample_GreetingAndHousehold_Phrases"
-        android:textColor="@android:color/background_light"
-        android:textStyle="bold" />
+        android:layout_height="match_parent"
+        app:columnCount="2"
+        app:rowCount="2">
 
-    <TextView
-        android:id="@+id/Travelnleisure_Phrases"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/list_item_height"
-        android:background="@color/colourBrown"
-        android:gravity="center_vertical"
-        android:onClick="OpenTravelActivity"
-        android:paddingLeft="16dp"
-        android:text="@string/Sample_TravelAndLeisure_Phrases"
-        android:textColor="@android:color/background_light"
-        android:textStyle="bold" />
+        <android.support.v7.widget.CardView
+            android:id="@+id/Outdoor_Phrases"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:onClick="OpenOutdoorActivity"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="3dp"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowWeight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/outdoorportharcourt" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/Sample_Outdoor_Phrases"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
 
 
-    <TextView
-        android:id="@+id/Outdoor_Phrases"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/list_item_height"
-        android:background="@color/colourBlue"
-        android:gravity="center_vertical"
-        android:onClick="OpenOutdoorActivity"
-        android:paddingLeft="16dp"
-        android:text="@string/Sample_Outdoor_Phrases"
-        android:textColor="@android:color/background_light"
-        android:textStyle="bold" />
+        <android.support.v7.widget.CardView
+            android:id="@+id/HouseHold_Phrases"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:onClick="OpenGreetingsActivity"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="3dp"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="0"
+            app:layout_rowWeight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/houseenvirnment" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/Sample_GreetingAndHousehold_Phrases"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
 
 
-    <TextView
-        android:id="@+id/Work_Phrases"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/list_item_height"
-        android:background="@color/colourlightpink"
-        android:gravity="center_vertical"
-        android:onClick="OpenWorkActivity"
-        android:paddingLeft="16dp"
-        android:text="@string/Sample_Work_Phrases"
-        android:textColor="@android:color/background_light"
-        android:textStyle="bold" />
+        <android.support.v7.widget.CardView
+            android:id="@+id/Travelnleisure_Phrases"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:onClick="OpenTravelActivity"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="3dp"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="0"
+            app:layout_rowWeight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/airport" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/Sample_TravelAndLeisure_Phrases"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/Work_Phrases"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:onClick="OpenWorkActivity"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="3dp"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowWeight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/office" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/Sample_Work_Phrases"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </android.support.v7.widget.GridLayout>
 
 </LinearLayout>

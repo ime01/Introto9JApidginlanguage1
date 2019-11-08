@@ -22,17 +22,17 @@ public class OutdoorActivity extends AppCompatActivity {
 
         final ArrayList<constructor> wordsSaid = new ArrayList<>();
 
-        wordsSaid.add(new constructor("Hello bro how are you doing","Hey my guy how far", R.raw.howfar));
-        wordsSaid.add(new constructor("We about to go play football at the field", "We wan go play ball for field",R.raw.morning));
-        wordsSaid.add(new constructor("Do you have cable i'm coming to watch game of thrones", "You get cable i dey come watch game of thrones o",R.raw.howyoudey));
-        wordsSaid.add(new constructor("Driver stop i'll have to alight i forgot my wallet at home", "Driver stop o i gat come down i forget wallet for house",R.raw.ideyo));
-        wordsSaid.add(new constructor("Hello mike is there food at home ", "Hey mikey my guy food dey house",R.raw.whoube));
-        wordsSaid.add(new constructor("Hello i'm trying to locate coolfm Port Harcourt", "How far where coolfm dey for this Port Harcourt",R.raw.wetinbeyourname));
-        wordsSaid.add(new constructor("Been walking a while think i need a bottle of water", "Men i don dey waka since i gat drink water now o",R.raw.mynamenajonsnow));
-        wordsSaid.add(new constructor("Pleasure Park is a nice hangout spot in Port Harcourt", "Pleasure Park na make sense place to chill for Port Harcourt o",R.raw.whereudeygo));
-        wordsSaid.add(new constructor("Fred i saw richard at the bustop on my way back yesterday", "Fred i been see richard as i dey come back from work yesterday",R.raw.wetindeysup));
-        wordsSaid.add(new constructor("Never walk alone", "No dey waka solo",R.raw.fooddonset));
 
+        wordsSaid.add(new constructor("Hello bro how are you doing","Hey my guy how far", R.raw.myguyhowfar));
+        wordsSaid.add(new constructor("We about to go play football at the field", "We wan go play ball for field",R.raw.playball));
+        wordsSaid.add(new constructor("Do you have cable i'm coming to watch game of thrones", "You get cable i dey come watch game of thrones o",R.raw.cable));
+        wordsSaid.add(new constructor("Driver stop i'll have to alight i forgot my wallet at home", "Driver stop o i gat come down i forget wallet for house",R.raw.wallet));
+        wordsSaid.add(new constructor("Hello mike is there food at home ", "Hey mikey my guy food dey house",R.raw.fooddeyhouse));
+        wordsSaid.add(new constructor("Hello i'm trying to locate coolfm Port Harcourt", "How far where coolfm dey for this Port Harcourt",R.raw.coolfm));
+        wordsSaid.add(new constructor("Been walking a while think i need a bottle of water", "Men i don dey waka since i gat drink water now o",R.raw.waka));
+        wordsSaid.add(new constructor("Pleasure Park is a nice hangout spot in Port Harcourt", "Pleasure Park na make sense place to chill for Port Harcourt o",R.raw.pleasurepark));
+        wordsSaid.add(new constructor("Fred i saw richard at the bustop on my way back yesterday", "Fred i been see richard as i dey come back from work yesterday",R.raw.seerichard));
+//        wordsSaid.add(new constructor("Never walk alone", "No dey waka solo",R.raw.fooddonset));
 
         CustomAdapter showsList = new CustomAdapter(this, wordsSaid,R.color.colourBlue);
 

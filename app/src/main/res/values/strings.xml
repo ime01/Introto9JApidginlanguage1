@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Intro to 9JA pidgin language</string>
+    <string name="app_name">Intro to Nigerian pidgin language</string>
 
     <string name="Sample_GreetingAndHousehold_Phrases">Sample Greetings and Household Phrases</string>
 
@@ -8,5 +8,6 @@
     <string name="Sample_TravelAndLeisure_Phrases">Sample Travel and Leisure Phrases</string>
 
     <string name="Sample_Work_Phrases">Sample Work Phrases</string>
+    <string name="try_out_my_view_pager">Try Out My View Pager</string>
 
 </resources>

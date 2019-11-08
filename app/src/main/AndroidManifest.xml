@@ -9,30 +9,37 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".GreetingNhouseholdActivity"
-            android:label="@string/Sample_GreetingAndHousehold_Phrases"
-            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-        <activity android:name=".OutdoorActivity"
-            android:label="@string/Sample_Outdoor_Phrases"
-            android:parentActivityName=".MainActivity"/>
-
-        <activity android:name=".TravelNleisureActivity"
-            android:label="@string/Sample_TravelAndLeisure_Phrases"
-            android:parentActivityName=".MainActivity"/>
-
-        <activity android:name=".WorkActivity"
-            android:label="@string/Sample_Work_Phrases"
-            android:parentActivityName=".MainActivity">
-
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            </intent-filter>
         </activity>
+        <activity
+            android:name=".GreetingNhouseholdActivity"
+            android:label="@string/Sample_GreetingAndHousehold_Phrases"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".OutdoorActivity"
+            android:label="@string/Sample_Outdoor_Phrases"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".TravelNleisureActivity"
+            android:label="@string/Sample_TravelAndLeisure_Phrases"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".WorkActivity"
+            android:label="@string/Sample_Work_Phrases"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".TestingViewPager" />
     </application>
 
 </manifest>
